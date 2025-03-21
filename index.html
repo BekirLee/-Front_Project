@@ -20,10 +20,11 @@
 
 <body>
 
-    <header>
+    <header class="bg-white position-fixed">
         <div class="header-bottom">
             <div class="container-fluid h-100">
-                <div class="row align-items-center h-100">
+                <div class="row align-items-center h-100 justify-content-between">
+
                     <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
                         <div class="logo">
                             <a href="index.html"><img
@@ -42,14 +43,29 @@
                                     <li>
                                         <a href="">Category</a>
                                     </li>
-                                    <li class="hot">
-                                        <a href="">Latest</a>
+                                    <li class="dropdown hot">
+                                        <a href="#">Latest</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">New Arrivals</a></li>
+                                            <li><a href="#">Top Rated</a></li>
+                                            <li><a href="#">Best Sellers</a></li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        <a href="">Blog</a>
+                                    <li class="dropdown">
+                                        <a href="#">Blog</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Latest News</a></li>
+                                            <li><a href="#">Tech Updates</a></li>
+                                            <li><a href="#">Tips & Tricks</a></li>
+                                        </ul>
                                     </li>
-                                    <li>
-                                        <a href="">Pages</a>
+                                    <li class="dropdown ">
+                                        <a href="#">Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="">Contact</a>
@@ -60,7 +76,8 @@
                     </div>
 
                     <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
-                        <ul id="headerRightUl" class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                        <ul id="headerRightUl"
+                            class="header-right f-right d-none d-lg-block d-flex justify-content-between">
                             <li class="d-none d-xl-block">
                                 <div class="form-box f-right">
                                     <input type="text" name="Search" placeholder="Search products">
@@ -88,16 +105,104 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- mobile menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none">
+                            <button class="menu-toggle">MENU <i class="fas fa-bars"></i></button>
+                            <ul class="mobile-nav">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Category</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle">Blog </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Latest News</a></li>
+                                        <li><a href="#">Tech Updates</a></li>
+                                        <li><a href="#">Tips & Tricks</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle">Latest</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">New Arrivals</a></li>
+                                        <li><a href="#">Top Rated</a></li>
+                                        <li><a href="#">Best Sellers</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
+    <div class="hero">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
 
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
+                    <div class="hero__img">
+                        <img src="https://preview.colorlib.com/theme/estore/assets/img/hero/hero_man.png.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-8">
+                    <div class="hero__caption">
+                        <span>60% Discount</span>
+                        <h1>
+                            Winter
+                            <br>
+                            Collection
+                            <br>
+                        </h1>
+                        <p>Best Cloth Collection By 2020!</p>
+                        <div class="hero__btn">
+                            <a href="#" class="btn hero-btn">
+                                Shop NOw
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section></section>
     <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <!--  -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const mobileNav = document.querySelector(".mobile-nav");
+            const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+            menuToggle.addEventListener("click", function () {
+                mobileNav.classList.toggle("active");
+            });
+
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    let submenu = this.nextElementSibling;
+                    submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
