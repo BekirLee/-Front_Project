@@ -378,6 +378,7 @@ header {
     color: red;
 }
 
+/* lastes products */
 
 .product-btn {
     padding: 0 50px;
@@ -427,4 +428,71 @@ header {
 
 .product-ratting i.low-star {
     color: #d3d3d3 !important;
+}
+
+.latest-product-area {
+    padding-bottom: 150px;
+}
+
+/* best product */
+.best-product-area .bg-height {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.best-product-area .product-man {
+    left: 5%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.best-product-area .best-product-caption {
+    padding-top: 150px;
+    padding-bottom: 130px;
+}
+
+.best-product-area .best-product-caption h2 {
+    color: #000;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 19px;
+}
+
+.best-product-area .best-product-caption p {
+    color: #373b41;
+    font-size: 20px;
+    margin-bottom: 55px;
+}
+
+.black-btn {
+    color: #fff;
+    background: #000;
+    box-shadow: 0px 20px 50px 0px rgba(22, 22, 22, 0.2);
+    transform: translateY(0px);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 27px 44px;
+    border-radius: 25px;
+}
+
+.best-product-area .vertical-text span {
+    text-orientation: 150deg;
+    writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 117px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #e6dfc6;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 0;
 }
