@@ -2,6 +2,7 @@
 
 /* header */
 header {
+    width: 100%;
     z-index: 20;
     box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
 }
@@ -250,6 +251,11 @@ header {
     /* background: #444; */
     /* transition: ease-in .3s; */
     text-align: left;
+}
+
+.mobile-nav .dropdown-menu {
+    background-color: #313639;
+    border: 0 !important;
 }
 
 .mobile-nav.active {

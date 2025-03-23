@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
 
+    <link rel="stylesheet" href="../css/product_list.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <!--  -->
@@ -109,33 +110,36 @@
                         <div class="mobile_menu d-block d-lg-none">
                             <button class="menu-toggle">MENU <i class="fas fa-bars"></i></button>
                             <ul class="mobile-nav">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Category</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">Blog </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Latest News</a></li>
-                                        <li><a href="#">Tech Updates</a></li>
-                                        <li><a href="#">Tips & Tricks</a></li>
-                                    </ul>
+                                <li>
+                                    <a href="../../index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#category">Category</a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle">Latest</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">New Arrivals</a></li>
-                                        <li><a href="#">Top Rated</a></li>
-                                        <li><a href="#">Best Sellers</a></li>
+                                        <li><a href="./ProductList.html">Product List</a></li>
+                                        <li><a href="./ProductDetails.html">Product Details</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle">Pages</a>
+                                    <a href="#" class="dropdown-toggle">Blog</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">FAQ</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="./Blog.html">Blog</a></li>
+                                        <li><a href="./BlogDetails.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Contact</a></li>
+                                <li class="dropdown ">
+                                    <a href="#" class="dropdown-toggle">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="./Login.html">Login</a></li>
+                                        <li><a href="./Card.html">Shopping card</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./Contact.html">Contact</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -146,7 +150,243 @@
 
     <!-- main -->
 
-    Product list
+    <section class="slider-area">
+        <div class="single-slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                            <h2>product list</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product_list section-padding2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product_sidebar">
+                        <div class="single_sidebar">
+                            <form action="#">
+                                <input type="text" name="#" placeholder="Search keyword">
+                                <i class="fa-solid fa-magnifying-glass" style="color:#795376 ;"></i>
+                            </form>
+                        </div>
+
+                        <div class="single_sidebar">
+                            <div class="select_option">
+                                <div class="select_option_list">Category <i class="right fas fa-caret-down"></i> </div>
+                                <div class="select_option_dropdown">
+                                    <p><a href="#">Category 1</a></p>
+                                    <p><a href="#">Category 2</a></p>
+                                    <p><a href="#">Category 3</a></p>
+                                    <p><a href="#">Category 4</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_sidebar">
+                            <div class="select_option">
+                                <div class="select_option_list">Type <i class="right fas fa-caret-down"></i> </div>
+                                <div class="select_option_dropdown">
+                                    <p><a href="#">Type 1</a></p>
+                                    <p><a href="#">Type 2</a></p>
+                                    <p><a href="#">Type 3</a></p>
+                                    <p><a href="#">Type 4</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="product_list">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product3.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Cervical pillow for airplane
+                                            car office nap pillow</a> </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product5.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a>
+                                    </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product4.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a>
+                                    </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product1.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
+                                            pillows</a> </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product6.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
+                                            pillows</a> </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product5.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain
+                                            relief</a> </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product2.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound
+                                            pillows</a> </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product6.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain
+                                            relief</a> </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product1.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a>
+                                    </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="single_product_item">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/categori/product6.png.webp"
+                                        alt="" class="img-fluid">
+                                    <h3> <a href="single-product.html">Geometric striped flower home classy decor</a>
+                                    </h3>
+                                    <p>From $5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load_more_btn text-center">
+                            <a href="#" class="btn_3">Load More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client_review">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="stage">
+
+                        <div class="slider_item">
+                            <div class="single_client_review">
+
+                                <div class="client_img">
+                                    <img src="https://preview.colorlib.com/theme/estore/assets/img/client_1.png.webp"
+                                        alt="#">
+                                </div>
+                                <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes
+                                    to
+                                    help alleviate human suffering
+                                    .
+                                </p>
+                                <h5>- Micky Mouse</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-method-area section-padding2">
+        <div class="container">
+            <div class="row">
+
+                <div class="row d-flex justify-content-between">
+
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-method mb-40">
+                            <i class="fa-solid fa-cube"></i>
+                            <h6>Free Shipping Method</h6>
+                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-method mb-40">
+                            <i class="fa-solid fa-lock"></i>
+                            <h6>Secure Payment System</h6>
+                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="single-method mb-40">
+                            <i class="fa-solid fa-rotate-right"></i>
+                            <h6>Secure Payment System</h6>
+                            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="subscribe_part section-padding2">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="subscribe_part_content text-center">
+                        <h2 class="text-white">Get promotionsupdates!</h2>
+                        <p class="text-white">Seamlessly empower fully researched growth strategies and interoperable
+                            internal or “organic”
+                            sources credibly innovate granular internal .</p>
+                        <div class="subscribe_form">
+                            <input type="email" placeholder="Enter your mail">
+                            <a href="#" class="btn_1">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer footer-padding">
         <div class="container">
@@ -160,9 +400,10 @@
                                         src="https://preview.colorlib.com/theme/estore/assets/img/logo/logo2_footer.png.webp"
                                         alt=""></a>
                             </div>
-                            <div class="footer-tittle" bis_skin_checked="1">
-                                <div class="footer-pera" bis_skin_checked="1">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor
+                            <div class="footer-tittle">
+                                <div class="footer-pera">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+                                        tempor
                                         incididunt ut labore.</p>
                                 </div>
                             </div>
@@ -225,7 +466,7 @@
                 <div class="col-xl-5 col-lg-5 col-md-5">
                     <div class="footer-copy-right f-right">
                         <!-- social -->
-                        <div class="footer-social" bis_skin_checked="1">
+                        <div class="footer-social">
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-behance"></i></a>
@@ -261,6 +502,44 @@
                 });
             });
         });
+    </script>
+
+    <!-- dropdown js -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdowns = document.querySelectorAll(".select_option_list");
+
+            dropdowns.forEach(selectOption => {
+
+                const dropdown = selectOption.nextElementSibling;
+
+                selectOption.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                    console.log(selectOption)
+                    document.querySelectorAll(".select_option_dropdown").forEach(otherDropdown => {
+                        console.log(otherDropdown)
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove("active");
+                        }
+                    });
+
+                    dropdown.classList.toggle("active");
+                });
+            });
+
+            document.addEventListener("click", function () {
+                document.querySelectorAll(".select_option_dropdown").forEach(dropdown => {
+                    dropdown.classList.remove("active");
+                });
+            });
+
+            document.querySelectorAll(".select_option_dropdown").forEach(dropdown => {
+                dropdown.addEventListener("click", function (event) {
+                    event.stopPropagation();
+                });
+            });
+        });
+
     </script>
 </body>
 
