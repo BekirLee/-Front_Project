@@ -319,6 +319,7 @@ p {
 
 .comments-area .comment-list {
     padding-bottom: 48px;
+    padding-top: 20px;
 }
 
 .comments-area .thumb {
