@@ -87,6 +87,7 @@ li {
     color: #2577fd;
     text-transform: uppercase;
     font-weight: 400;
+    transition: ease-in .2s;
 }
 
 .btn_3:hover {
