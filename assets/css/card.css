@@ -94,3 +94,44 @@
     font-family: "Playfair Display", serif;
     margin-bottom: 0px;
 }
+
+.shippingTd {
+    vertical-align: top !important;
+}
+
+.shipping_select {
+    display: block;
+    width: 100%;
+    background: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+option {
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color: #828bb2 !important;
+}
+
+.post_code {
+    display: block;
+    width: 100%;
+    background: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+}
+
+/*  */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .cart_area .media {
+        display: block !important;
+    }
+
+    .media-body {
+        width: 100% !important;
+    }
+}
